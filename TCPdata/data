@@ -1,0 +1,77 @@
+using System.Collections.Generic;
+
+namespace TCPdata  
+{
+    public static class data  
+    {
+        public static List<employee> GetEmployees()  
+        {
+            List<employee> employees = new List<employee>();
+
+            employee emp1 = new employee
+            {
+                id = 1,
+                firstname = "karim",
+                lastname = "sliman",
+                annualsalary = 600000,
+                ismanager = true,
+                departmentid = 1
+            };
+            employees.Add(emp1);
+
+            employee emp2 = new employee
+            {
+                id = 2,
+                firstname = "mahmoud",
+                lastname = "wagdy",
+                annualsalary = 300000,
+                ismanager = false,
+                departmentid = 1
+            };
+            employees.Add(emp2);
+
+            employee emp3 = new employee
+            {
+                id = 2,
+                firstname = "mazen",
+                lastname = "yasser",
+                annualsalary = 400000,
+                ismanager = false,
+                departmentid = 2
+            };
+            employees.Add(emp3);  
+
+            return employees;
+        }
+
+        public static List<department> GetDepartments()
+        {
+            List<department> departments = new List<department>();
+            department dep1 = new department
+            {
+                id = 1,
+                shortname = "IT",
+                longname = "Information Technology"
+            };
+            departments.Add(dep1);
+
+            department dep2 = new department
+            {
+                id = 2,
+                shortname = "HR",
+                longname = "Human Resources"
+            };
+            departments.Add(dep2);
+
+            department dep3 = new department
+            {
+                id = 3,
+                shortname = "PR",
+                longname = "Public Relations"
+            };
+            departments.Add(dep3);
+
+            return departments;
+        }
+    }
+}
