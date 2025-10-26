@@ -1,0 +1,9 @@
+namespace TCPdata  
+{
+    public class department
+    {
+        public int id { get; set; }
+        public string shortname { get; set; }
+        public string longname { get; set; }
+    }
+}
